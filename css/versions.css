@@ -16,7 +16,7 @@
 -------------------------------------------------------------------*/
 
 body.azemut_version {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif, 'Roboto';
 }
 
 body.azemut_version .footer-links li:hover a,
