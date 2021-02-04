@@ -86,7 +86,7 @@
                         <li><a class="active" href="index">Accueil</a></li>
                         <li><a data-scroll href="about">A Propos</a></li>
                         <li><a data-scroll href="services">Nos Prestations</a></li>
-                        <li><a data-scroll href="https://bit.ly/formulaire_devis" target="_blank">Devis Gratuit</a></li>
+                        <li><a data-scroll href="devis">Devis Gratuit</a></li>
                         <li><a data-scroll href="realisations">Réalisations</a></li>
                         <li><a data-scroll href="index#getintouch">Contactez-nous</a></li>
                      </ul>
@@ -138,21 +138,28 @@
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                    <div class="row">
                                                       <div class="form-group">
-                                                         <input type="text" id="name" name="name" placeholder="NOM & PRENOM"  />
+                                                         <input type="text" id="name" name="name" placeholder="NOM & PRENOM" required />
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                   <div class="form-group">
+                                                      <input type="number" name="Phone" placeholder="TELEPHONE" id="Phone" required />
                                                       </div>
                                                    </div>
                                                 </div>
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                    <div class="row">
                                                       <div class="form-group">
-                                                         <input type="localisation" name="localisation" placeholder="LOCALISATION" id="localisation" />
+                                                         <input type="localisation" name="localisation" placeholder="LOCALISATION" id="localisation" required />
                                                       </div>
                                                    </div>
                                                 </div>
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
                                                    <div class="row">
                                                       <div class="form-group">
-                                                         <select class="form-control" name="JOURS">
+                                                         <select class="form-control" name="JOURS" required>
                                                             <option value="">JOURS</option>
                                                             <option value="lundi">Lundi</option>
                                                             <option value="mardi">Mardi</option>
@@ -163,7 +170,7 @@
                                                          </select>
                                                       </div>
                                                       <div class="form-group">
-                                                         <select class="form-control" name="plage horaire">
+                                                         <select class="form-control" name="plage horaire" required>
                                                             <option value="">PLAGE HORAIRE</option>
                                                             <option value="matin (08h - 12h)">MATIN (08h - 12h)</option>
                                                             <option value="matin (13h - 17h)">APRES MIDI (13h - 17h)</option>
@@ -174,7 +181,7 @@
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                    <div class="row">
                                                       <div class="form-group">
-                                                         <select class="form-control" name="Choisissez_votre_offre">
+                                                         <select class="form-control" name="Choisissez_votre_offre" required>
                                                             <option>CHOISISSEZ VOTRE OFFRE</option>
                                                             <option value="infographie">INFOGRAPHIE & WEBDESIGN</option>
                                                             <option value="motion design">MOTION DESIGN</option>
@@ -382,6 +389,7 @@
                         </div>
                      </div>
                      <a href="services" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1" style="margin-left:10%;">Voir nos Prestations</a>
+                     <a href="devis" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1" style="margin-left:2%;">J'Obtiens un Devis</a>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -393,21 +401,28 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <input type="text" id="name" name="name" placeholder="NOM & PRENOM"  />
+                                       <input type="text" id="name" name="name" placeholder="NOM & PRENOM" required />
                                     </div>
                                  </div>
                               </div>
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                               <div class="row">
+                                  <div class="form-group">
+                                     <input type="number" name="Phone" placeholder="TELEPHONE" id="Phone" required />
+                                     </div>
+                                  </div>
+                               </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <input type="localisation" name="localisation" placeholder="LOCALISATION" id="localisation" />
+                                       <input type="localisation" name="localisation" placeholder="LOCALISATION" id="localisation" required />
                                     </div>
                                  </div>
                               </div>
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
                                  <div class="row">
                                     <div class="form-group">
-                                       <select class="form-control" name="JOURS">
+                                       <select class="form-control" name="JOURS" required>
                                           <option value="">JOURS</option>
                                           <option value="lundi">Lundi</option>
                                           <option value="mardi">Mardi</option>
@@ -418,7 +433,7 @@
                                        </select>
                                     </div>
                                     <div class="form-group">
-                                       <select class="form-control" name="plage horaire">
+                                       <select class="form-control" name="plage horaire" required>
                                           <option value="">PLAGE HORAIRE</option>
                                           <option value="matin (08h - 12h)">MATIN (08h - 12h)</option>
                                           <option value="matin (13h - 17h)">APRES MIDI (13h - 17h)</option>
@@ -429,7 +444,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <select class="form-control" name="Choisissez_votre_offre">
+                                       <select class="form-control" name="Choisissez_votre_offre" required>
                                           <option>CHOISISSEZ VOTRE OFFRE</option>
                                           <option value="infographie">INFOGRAPHIE & WEBDESIGN</option>
                                           <option value="motion design">MOTION DESIGN</option>
@@ -624,7 +639,7 @@
             <div class="heading" style="background-image:url('images/ciel.jpg');">
                <span class="icon-logo"><img src="images/icon-logo.png" alt="LOGO"></span>
                <h2>CONTACTEZ-NOUS</h2>
-               <a href="https://web.facebook.com/crea.azemut.1?_rdc=1&_rdr" target="_blank"><img src="images/facebook.PNG" width="50" height="50" alt="icone facebook" class="img-fluid"></a>&nbsp;- &nbsp;<a href="https://www.youtube.com/channel/UC9_KqlTvN4aqSvoGpP4XDMg" target="_blank"><img src="images/youtube.PNG" width="50" height="50" alt="icone youtube" class="img-fluid"></a>&nbsp;- &nbsp;<a href=""><img src="images/linkedin.PNG" width="50" height="50" alt="icone linkedin" class="img-fluid"></a>&nbsp;- &nbsp;<a href="tel:+2250586791422"><img src="images/whatsapp.PNG" width="50" height="50" alt="icone whatsapp" class="img-fluid"></a>
+               <a href="https://web.facebook.com/crea.azemut.1" target="_blank"><img src="images/facebook.PNG" width="50" height="50" alt="icone facebook" class="img-fluid"></a>&nbsp;- &nbsp;<a href="https://www.youtube.com/channel/UC9_KqlTvN4aqSvoGpP4XDMg" target="_blank"><img src="images/youtube.PNG" width="50" height="50" alt="icone youtube" class="img-fluid"></a>&nbsp;- &nbsp;<a href="https://www.linkedin.com/in/crea-azemut-6311a9206" target="_blank"><img src="images/linkedin.PNG" width="50" height="50" alt="icone linkedin" class="img-fluid"></a>&nbsp;- &nbsp;<a href="tel:+2250586791422"><img src="images/whatsapp.PNG" width="50" height="50" alt="icone whatsapp" class="img-fluid"></a>
             </div>
          </div>
          <div class="contact-section" style="background:url(images/3d-digital.jpg);">
@@ -722,8 +737,8 @@
                   <div class="social">
                      <ul class="social-links">
                         <li><a href=""><i class="fa fa-rss"></i></a></li>
-                        <li><a href="https://web.facebook.com/crea.azemut.1?_rdc=1&_rdr"><i class="fa fa-facebook" target="_blank"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://fb.me/AzemutCREA"><i class="fa fa-facebook" target="_blank"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/crea-azemut-6311a9206" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UC9_KqlTvN4aqSvoGpP4XDMg" target="_blank"><i class="fa fa-youtube"></i></a></li>
                         <li><a href=""><i class="fa fa-pinterest"></i></a></li>
