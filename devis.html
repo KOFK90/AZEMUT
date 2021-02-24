@@ -107,6 +107,16 @@
             </div>
          </div>
       </header>
+      <script>
+         function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+               x.style.display = "none";
+            } else {
+               x.style.display = "block";
+            }
+         }
+      </script>
       <div class="parallax first-section wow fadeIn" style="background-image:url('images/Korhogo.jpg');">
       <div id="" class="">
          <div class="container">
@@ -290,7 +300,9 @@
                         <div class="modal-body" style="">
                         <!-- Formulaire RDV -->
                         <div class="appointment-form">
-                           <h3><span>+</span> Prendre un Rendez-vous !</h3>
+                           <h3><span>+</span> Prendre un Rendez-vous !
+                              <a href="devis" style="float:right"><button type="button" class="btn btn-danger">Fermer</button></a>
+                           </h3>
                            <div class="form">
                               <form netlify method="POST" name="formulaire_rdv">
                                              <fieldset>
@@ -378,7 +390,7 @@
                <!-- End of Modal -->
          </div>
       </div>
-      <footer id="footer" class="footer-area wow fadeIn" style="background:linear-gradient(to right, #ffff 0%, #00ffff 100%);">
+      <footer id="footer" class="footer-area wow fadeIn">
          <div class="container">
             <div class="row">
                <div class="col-md-4">

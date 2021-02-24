@@ -107,6 +107,16 @@
             </div>
          </div>
       </header>
+      <script>
+         function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+               x.style.display = "none";
+            } else {
+               x.style.display = "block";
+            }
+         }
+      </script>
       <div class="parallax first-section wow fadeIn" data-stellar-background-ratio="" style="background-image:url('images/tiassalé.jpg');">
       <div id="" class="">
          <div class="container">
@@ -123,7 +133,7 @@
                      <h2 style="color:#fff;text-shadow: 1px 2px 3px #000;">Quel est notre Vision ?</h2>
                      <p> Fort de ses expériences riches et productives dans le Digal <strong>(Développement Web, le WebDesign...)</strong> et face aux défis et innovations du moment, <strong>AZEMUT CREA</strong> apporte des solutions concrètes, non seulement pour vous donner le meilleur positionnement sur (la Toile) le Web; mais qui plus encore pour tisser votre propore Toile, en vue d'accroitre votre Notoriété et par conséquent booster de façon considérable votre activité.</p>
                      <a href="services" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1">Voir nos Prestations</a>
-                     <a href="Realisations" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1" style="margin-left:2%;">Quelques Réealisations</a>
+                     <a href="Realisations" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1" style="margin-left:2%;">Quelques Réalisations</a>
                   </div>
                   <!-- end messagebox -->
                </div>
@@ -149,7 +159,9 @@
                         <div class="modal-body" style="">
                         <!-- Formulaire RDV -->
                         <div class="appointment-form">
-                           <h3><span>+</span> Prendre un Rendez-vous !</h3>
+                           <h3><span>+</span> Prendre un Rendez-vous !
+                              <a href="about" style="float:right"><button type="button" class="btn btn-danger">Fermer</button></a>
+                           </h3>
                            <div class="form">
                               <form netlify method="POST" name="formulaire_rdv">
                                              <fieldset>
@@ -231,7 +243,7 @@
          </div>
       </div>
       
-      <footer id="footer" class="footer-area wow fadeIn" style="background:linear-gradient(to right, #ffff 0%, #00ffff 100%);">
+      <footer id="footer" class="footer-area wow fadeIn">
          <div class="container">
             <div class="row">
                <div class="col-md-4">

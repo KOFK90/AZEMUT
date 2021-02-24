@@ -107,6 +107,16 @@
             </div>
          </div>
       </header>
+      <script>
+         function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+               x.style.display = "none";
+            } else {
+               x.style.display = "block";
+            }
+         }
+      </script>
       <div class="parallax first-section wow fadeIn" data-stellar-background-ratio="" style="background-image:url('images/cosmic.jpg');">
          <div class="container">
           <div class="heading">
@@ -128,7 +138,7 @@
                                    <div class="modal-content">
                                     <div class="modal-header" style="background:#39B49B;">
                                      <h4 class="modal-title" style="font-size:25px;">DEVELOPPEMENT WEB</h4>
-                                     <a href="services.html"><button type="button" class="close">&times;</button></a>
+                                     <a href="services"><button type="button" class="close">&times;</button></a>
                                     </div>
                                    <!-- Modal body -->
                                    <div class="modal-body" style="color:#000; text-align: justify;">
@@ -373,7 +383,9 @@
                     <div class="modal-body" style="">
                     <!-- Formulaire RDV -->
                     <div class="appointment-form">
-                        <h3><span>+</span> Prendre un Rendez-vous !</h3>
+                        <h3><span>+</span> Prendre un Rendez-vous !
+                          <a href="services" style="float:right"><button type="button" class="btn btn-danger">Fermer</button></a>
+                        </h3>
                         <div class="form">
                           <form netlify method="POST" name="formulaire_rdv">
                            <fieldset>
@@ -577,7 +589,7 @@
              <a href="#" class="btn btn-primary">Save changes</a>
          </div>
          </div> -->
-      <footer id="footer" class="footer-area wow fadeIn" style="background:linear-gradient(to right, #ffff 0%, #00ffff 100%);">
+      <footer id="footer" class="footer-area wow fadeIn">
          <div class="container">
             <div class="row">
                <div class="col-md-4">

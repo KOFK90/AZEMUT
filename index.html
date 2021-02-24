@@ -19,8 +19,8 @@
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- Site Metas -->
    <title>AGENCE WEB DIGITALE | ABIDJAN - COTE D'IVOIRE | AZEMUT CREA</title>
-   <meta name="keywords" content="AZEMUT CREA, Site web, Application web, Référencement SEO, Infographie et Webdesign, Motion Design, Formation">
-   <meta name="description" content="AZEMUT CREA, agence web digitale spécialisée dans la Création de : Site Web, d'Application web, Référencement SEO, Infographie et Webdesign, Motion Design, et la Formation">
+   <meta name="keywords" content="AZEMUT CREA, Création de Site Internet, Application web, Référencement SEO, Infographie et Webdesign, Motion Design, Formation">
+   <meta name="description" content="AZEMUT CREA, agence web digitale spécialisée dans la Création de Site Internet, d'Application web, Référencement SEO, Infographie et Webdesign, Motion Design, et la Formation">
    <meta name="author" content="AZEMUT CREA">
    <meta name="google-site-verification" content="UM8NgPvf-RD5GeMvyqgv1EU7a9K7qCL5Jn1Ulm1nVVA"/>
    <!-- Style -->
@@ -60,15 +60,15 @@
                      
                      <div class="info-inner">
                         <span class="icontop"><img src="images/phone-icon.png" alt="téléphone"></span>
-                        <span class="iconhaut"><a data-scroll href="tel:+2250586791422">+225 05 867 914 22</a></span>	
+                        <span class="iconhaut"><a data-scroll href="tel:+2250586791422">+225 05 867 914 22</a></span>   
                      </div>
                      <div class="info-inner">
                         <span class="icontop"><img src="images/envelope.png" alt="envelope"></span>
-                        <span class="iconhaut"><a data-scroll href="mailto:azemutcrea@gmail.com">azemutcrea@gmail.com</a></span>	
+                        <span class="iconhaut"><a data-scroll href="mailto:azemutcrea@gmail.com">azemutcrea@gmail.com</a></span> 
                      </div>
                      <div class="info-inner">
                         <span class="icontop"><img src="images/clock.png" alt="clock"></span>
-                        <span class="iconhaut"><a data-scroll href="index.html">Ouvert: 8:00am - 8:00pm</a></span>	
+                        <span class="iconhaut"><a data-scroll href="index.html">Ouvert: 8:00am - 8:00pm</a></span>   
                      </div>
                   </div>
                </div>
@@ -80,7 +80,7 @@
                   <div class="navbar-header">
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
                   </div>
-				  
+              
                   <div id="navbar" class="navbar-collapse collapse">
                      <ul class="nav navbar-nav">
                         <li><a class="active" href="index">Accueil</a></li>
@@ -107,6 +107,16 @@
             </div>
          </div>
       </header>
+      <script>
+         function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+               x.style.display = "none";
+            } else {
+               x.style.display = "block";
+            }
+         }
+      </script>
       <div class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('images/slider-bg.jpg');">
          <div class="container">
             <div class="row">
@@ -131,7 +141,9 @@
                                    <div class="modal-body" style="">
                                     <!-- Formulaire RDV -->
                                     <div class="appointment-form">
-                                       <h3><span>+</span> Prendre un Rendez-vous !</h3>
+                                       <h3><span>+</span> Prendre un Rendez-vous !
+                                          <a href="index" style="float:right"><button type="button" class="btn btn-danger">Fermer</button></a>
+                                       </h3>
                                        <div class="form">
                                           <form netlify method="POST" name="formulaire_rdv">
                                              <fieldset>
@@ -212,7 +224,8 @@
                                     </div>
                                     </div>
                                     <!-- End Formulaire -->
-                                    <div class="modal-footer"></div>
+                                    <div class="modal-footer">
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -220,6 +233,31 @@
          <!-- end container -->
       </div>
       <!-- end section "Parce que les innovations en termes de communication, donne tout leur sens au Digital" -->
+            <script type="text/javascript">
+               $(window).on('load', function() {
+                   $('#Modalpub').modal('show');
+               });
+            </script>
+            <div class="modal" id="Modalpub" role="dialog">
+               <div class="modal-dialog">
+                  <!-- Modal Header -->
+                  <div class="modal-content">
+                  <div class="modal-header">
+                     <h4 class="modal-title" style="font-size:35px; text-align: center;">INSTANT PUB !!!</h4>
+                     <button type="button" class="close" data-dismiss="modal">&times;</button></a>
+                  </div>
+                <div class="modal-body">
+                  <img src="images/EVIA2B.jpg" alt="SAVON LIQUIDE EVIA" class="img-responsive">
+                    <p style="color:#000; text-align:center;">SAVON DE QUALITE POUR VOS VETEMENTS DE QUALITES</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button></a>
+                    <a href="https://web.facebook.com/SavonEvia" target="_blank" class="btn btn-success">Contacter EVIA SAVON</a>
+                </div>
+            </div>
+           </div>
+         </div>
+
       <div id="time-table" class="time-table-section">
          <div class="container">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -680,7 +718,7 @@
             <div id="googleMap" style="width:100%;height:450px;"></div>
          </div>
       </div>
-      <footer id="footer" class="footer-area wow fadeIn" style="background:linear-gradient(to right, #ffff 0%, #00ffff 100%);">
+      <footer id="footer" class="footer-area wow fadeIn">
          <div class="container">
             <div class="row">
                <div class="col-md-4">
@@ -725,7 +763,7 @@
             </div>
          </div>
       </footer>
-      <div class="copyright-area wow fadeIn">
+      <div class="copyright-area wow fadeIn" style="">
          <div class="container">
             <div class="row">
                <div class="col-md-8">

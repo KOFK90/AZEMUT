@@ -81,13 +81,11 @@
                     .after('<img src="images/ajax-loader.gif" class="loader" />')
                     .attr('disabled', 'disabled');
                 $.post(action, {
-                        first_name: $('#first_name').val(),
-                        last_name: $('#last_name').val(),
+                        nom_prenom: $('#nom_prenom').val(),
                         email: $('#email').val(),
                         phone: $('#phone').val(),
-                        select_service: $('#select_service').val(),
-                        select_price: $('#select_price').val(),
-                        comments: $('#comments').val(),
+                        subject: $('#subject').val(),
+                        message: $('#message').val(),
                         verify: $('#verify').val()
                     },
                     function(data) {
